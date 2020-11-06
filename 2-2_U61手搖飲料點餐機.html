@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--載入Bootstrap－CSS套件(bootstrap)：放在<head>內-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!--載入 Font awesome 套件(Kits)：放在<head>內-->
+  <script src="https://kit.fontawesome.com/b677c2f0a5.js" crossorigin="anonymous"></script>
+
+  <!--連結CSS檔案-->
+  <link rel="stylesheet" href="2-2_U61手搖飲料點餐機.css" type="text/css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="text-center text-light pt-4">Alpha POS System</h2>
+    <!--row：並列-->
+    <div class="row">
+      <!-- Left-side order list -->
+      <div class="col-md-4 p-4" data-order-lists>
+
+        <div class="card mb-3">
+          <div class="card-body pt-3 pr-3">
+            <!-- Delete Button -->
+            <div class="text-right">
+              <button type="button" class="btn btn-secondary btn-sm rounded" data-alpha-pos="delete-drink">X</button>
+            </div>
+
+            <h5 class="card-title mb-1">Black Tea</h5>
+
+            <div class="card-text">Less Ice</div>
+            <div class="card-text">Half Sugar</div>
+          </div>
+
+          <div class="card-footer text-right py-2">
+            <div class="card-text text-primary font-weight-bold">
+              $ <span data-drink-price>30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body pt-3 pr-3">
+            <!-- Delete Button -->
+            <div class="text-right">
+              <button type="button" class="btn btn-secondary btn-sm rounded" data-alpha-pos="delete-drink">X</button>
+            </div>
+
+            <h5 class="card-title mb-1">Black Tea</h5>
+
+            <div class="card-text">Less Ice</div>
+            <div class="card-text">Half Sugar</div>
+          </div>
+
+          <div class="card-footer text-right py-2">
+            <div class="card-text text-primary font-weight-bold">
+              $ <span data-drink-price>30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body pt-3 pr-3">
+            <!-- Delete Button -->
+            <div class="text-right">
+              <button type="button" class="btn btn-secondary btn-sm rounded" data-alpha-pos="delete-drink">X</button>
+            </div>
+
+            <h5 class="card-title mb-1">Black Tea</h5>
+
+            <div class="card-text">Less Ice</div>
+            <div class="card-text">Half Sugar</div>
+          </div>
+
+          <div class="card-footer text-right py-2">
+            <div class="card-text text-primary font-weight-bold">
+              $ <span data-drink-price>30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout Button -->
+        <div class="text-right">
+          <button type="button" class="btn btn-info" style="min-width: 120px;" data-alpha-pos="checkout">Check
+            out</button>
+        </div>
+
+      </div>
+
+      <div class="col-md-8 p-4" data-order-panel>
+        <section class="menu mb-4">
+
+          <!-- First row -->
+          <div class="card-deck mb-3">
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Black Tea</h5>
+                <input type="radio" name="drink" value="Black Tea">
+              </label>
+            </div>
+
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Oolong Tea</h5>
+                <input type="radio" name="drink" value="Oolong Tea">
+              </label>
+            </div>
+
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Baozong Tea</h5>
+                <input type="radio" name="drink" value="Baozong Tea">
+              </label>
+            </div>
+
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Green Tea</h5>
+                <input type="radio" name="drink" value="Green Tea">
+              </label>
+            </div>
+          </div>
+
+          <!-- Second row -->
+          <div class="card-deck">
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Bubble Milk Tea</h5>
+                <input type="radio" name="drink" value="Bubble Milk Tea">
+              </label>
+            </div>
+
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Black Tea Latte</h5>
+                <input type="radio" name="drink" value="Black Tea Latte">
+              </label>
+            </div>
+
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Lemon Green Tea</h5>
+                <input type="radio" name="drink" value="Lemon Green Tea">
+              </label>
+            </div>
+
+            <div class="card text-center">
+              <label class="card-body px-2">
+                <h5 class="card-title">Matcha Latte</h5>
+                <input type="radio" name="drink" value="Matcha Latte">
+              </label>
+            </div>
+          </div>
+        </section>
+        <!-- Ice -->
+        <section class="ice mb-4">
+          <label class="d-block text-light">
+            <h5>ICE</h5>
+          </label>
+
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-primary">
+              <input type="radio" name="ice" value="No Ice" />No
+            </label>
+
+            <label class="btn btn-outline-primary">
+              <input type="radio" name="ice" value="Less Ice" />Less
+            </label>
+
+            <!-- 預設Regular Ice：<label>內class加上active；<input>套上checked屬性 -->
+            <label class="btn btn-outline-primary active">
+              <input type="radio" name="ice" value="Regular Ice" checked />Regular
+            </label>
+          </div>
+        </section>
+
+        <section class="sugar mb-5">
+          <label class="d-block text-light">
+            <h5>SUGAR</h5>
+          </label>
+
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-info">
+              <input type="radio" name="sugar" value="No Sugar">No
+            </label>
+
+            <label class="btn btn-outline-info">
+              <input type="radio" name="sugar" value="A Little Sugar">A Little
+            </label>
+
+            <label class="btn btn-outline-info">
+              <input type="radio" name="sugar" value="Half Sugar">Half
+            </label>
+
+            <label class="btn btn-outline-info">
+              <input type="radio" name="sugar" value="Less Sugar">Less
+            </label>
+
+            <label class="btn btn-outline-info active">
+              <input type="radio" name="sugar" value="Regular Sugar" checked>Regular
+            </label>
+          </div>
+        </section>
+
+        <div class="text-right">
+          <div class="btn btn-light" style="min-width: 120px;" data-alpha-pos="add-drink">Add
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!--載入Bootstrap－JS套件(jquery、popper.js、bootstrap)：放在<body>內，最下面-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <!--載入 axios 套件(Ajax)：放在<body>內，最下面-->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!--載入JavaScript檔案：注意!!! 順序必須在 axios CDN 後面-->
+  <!--也可改寫為" ./js檔案名稱"-->
+  <script src="2-2_U61手搖飲料點餐機.js"></script>
+
+</body>
+
+</html>

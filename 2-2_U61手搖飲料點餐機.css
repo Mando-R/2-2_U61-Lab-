@@ -1,0 +1,54 @@
+/* .col-md-4, .col-md-8 {
+  outline: 2px solid green;
+  min-height: 600px;
+} */
+
+.container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+}
+
+/* [data-alpha-pos="delete-drink"] {
+  display: inline-block;
+  text-align: center; 
+  color: white;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  font-size: px;
+  line-height: 1;
+}  */
+
+/* [data-alpha-pos="delete-drink"]:hover {
+  color: #333;
+} */
+
+/* Menu */
+.menu .card-body {
+  cursor: pointer;
+}
+
+.menu .card:hover {
+  box-shadow: 0px 0px 10px 1px rgba(255, 255 ,255, 0.8);
+}
+
+/* 注意：body前面沒有加" . " */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://lh5.googleusercontent.com/kIXaOf_woyp9TMJp1HAq6zBj1r8qb5IEV0fUy9QVkQy07NMBDuzXauqAqFwgG2TKg0GuSbg5sEmJTfh0nhsUOHNTzENY6lrxAn06iYDhuOrz8ApAPF_yZTEVWcnO6jHjMjwQZ_W0") no-repeat center center;
+  background-size: cover;
+}
+
+.row {
+  max-height: 600px;
+}
+
+.col-md-4 {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+
